@@ -1,7 +1,0 @@
-streamlit
-pdfplumber
-pandas
-scikit-learn
-google-genai
-python-dotenv
-pydantic
