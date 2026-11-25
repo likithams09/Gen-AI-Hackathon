@@ -1,0 +1,192 @@
+/* CareerIQ Executive Light/Dark-Friendly Clean Styling */
+
+.main .block-container {
+    padding-top: 1.75rem;
+    padding-bottom: 2.5rem;
+    max-width: 1200px;
+}
+
+/* Header Banner */
+.careeriq-header {
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.careeriq-title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0;
+    color: #0f172a;
+}
+
+.careeriq-subtitle {
+    font-size: 0.95rem;
+    color: #475569;
+    margin-top: 0.25rem;
+}
+
+/* Cards */
+.iq-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1.15rem 1.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.iq-card h4 {
+    margin: 0 0 0.5rem 0;
+    color: #0f172a;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.iq-card p {
+    margin: 0.25rem 0;
+    color: #334155;
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+/* Badges / Skill Tags */
+.skill-tag {
+    display: inline-block;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 0.2rem 0.6rem;
+    margin: 0.2rem 0.25rem 0.2rem 0;
+    font-size: 0.82rem;
+    font-weight: 500;
+}
+
+.skill-tag-matched {
+    background-color: #ecfdf5;
+    color: #065f46;
+    border-color: #a7f3d0;
+}
+
+.skill-tag-missing {
+    background-color: #fef2f2;
+    color: #991b1b;
+    border-color: #fecaca;
+}
+
+.priority-badge {
+    display: inline-block;
+    padding: 0.15rem 0.55rem;
+    border-radius: 4px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.priority-high {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.priority-medium {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.priority-low {
+    background-color: #e0f2fe;
+    color: #075985;
+}
+
+/* Rewrite Comparison Box */
+.rewrite-box {
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    padding: 0.9rem 1.1rem;
+    margin-bottom: 0.85rem;
+    background-color: #f8fafc;
+}
+
+.rewrite-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #475569;
+    margin-bottom: 0.2rem;
+}
+
+/* Verdict Banners */
+.verdict-banner {
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+}
+
+.verdict-pass {
+    background-color: #ecfdf5;
+    border-color: #a7f3d0;
+    color: #065f46;
+}
+
+.verdict-borderline {
+    background-color: #fffbeb;
+    border-color: #fde68a;
+    color: #92400e;
+}
+
+.verdict-risk {
+    background-color: #fef2f2;
+    border-color: #fecaca;
+    color: #991b1b;
+}
+
+.roi-callout {
+    border: 1px solid #bfdbfe;
+    border-left: 4px solid #1d4ed8;
+    border-radius: 8px;
+    padding: 0.9rem 1.15rem;
+    background-color: #eff6ff;
+    color: #1e3a8a;
+    margin: 0.75rem 0 1rem 0;
+}
+
+/* Dark theme adjustments when Streamlit uses dark mode */
+@media (prefers-color-scheme: dark) {
+    .careeriq-header {
+        border-bottom-color: #334155;
+    }
+    .careeriq-title {
+        color: #f8fafc;
+    }
+    .careeriq-subtitle {
+        color: #94a3b8;
+    }
+    .iq-card {
+        background-color: #1e293b;
+        border-color: #334155;
+    }
+    .iq-card h4 {
+        color: #f8fafc;
+    }
+    .iq-card p {
+        color: #cbd5e1;
+    }
+    .skill-tag {
+        background-color: #334155;
+        color: #e2e8f0;
+        border-color: #475569;
+    }
+    .rewrite-box {
+        background-color: #1e293b;
+        border-color: #334155;
+        border-left-color: #3b82f6;
+    }
+    .rewrite-label {
+        color: #94a3b8;
+    }
+}
